@@ -1,0 +1,246 @@
+{
+  "products": [
+    {
+      "name": "ACEITE BELMONT 12 X 1LT – VENTA MINIMA X CAJA",
+      "brand": "Belmont",
+      "price": "$1,389",
+      "originalPrice": "$1,990",
+      "discount": 30,
+      "image": "/ID-1.png",
+      "category": "Aceites",
+      "link": "/products/aceite-belmont",
+      "featured": true,
+      "stock": 15
+    },
+    {
+      "name": "ACEITE CHEF MARAVILLA 12 X 1 LT – VENTA MINIMA X CAJA",
+      "brand": "Chef",
+      "price": "$2,900",
+      "originalPrice": "$3,490",
+      "discount": 17,
+      "image": "/ID-3.png",
+      "category": "Aceites",
+      "link": "/products/aceite-chef-maravilla",
+      "featured": true,
+      "stock": 8
+    },
+    {
+      "name": "AJI DON JUAN SACHET 18 X 100 GRS – VENTA MINIMA X DISPLAY",
+      "brand": "Don Juan",
+      "price": "$1,200",
+      "originalPrice": "$1,500",
+      "discount": 20,
+      "image": "/ID-14.png",
+      "category": "Especias",
+      "link": "/products/aji-don-juan",
+      "featured": false,
+      "stock": 50
+    },
+    {
+      "name": "AMB.GELATINA TRAD. 6X8X60 GRS",
+      "brand": "Ambrosoli",
+      "price": "$2,000",
+      "originalPrice": "$2,500",
+      "discount": 20,
+      "image": "/ID-15.png",
+      "category": "Postres",
+      "link": "/products/gelatina-tradicional",
+      "featured": false,
+      "stock": 30
+    },
+    {
+      "name": "AMB.GELATINA TRAD. 6X8X60 GRS",
+      "brand": "Ambrosoli",
+      "price": "$2,000",
+      "originalPrice": "$2,500",
+      "discount": 20,
+      "image": "/ID-16.png",
+      "category": "Postres",
+      "link": "/products/gelatina-tradicional",
+      "featured": false,
+      "stock": 30
+    },
+    {
+      "name": "ARIEL LIQUIDO 9 X 800 ML - VENTA MINIMA X CAJA",
+      "brand": "Ariel",
+      "price": "$7,200",
+      "originalPrice": "$8,500",
+      "discount": 15,
+      "image": "/ID-17.png",
+      "category": "Limpieza",
+      "link": "/products/ariel-liquido",
+      "featured": false,
+      "stock": 10
+    },
+    {
+      "name": "ARIEL LIQUIDO 9 X 800 ML - VENTA MINIMA X CAJA",
+      "brand": "Ariel",
+      "price": "$7,200",
+      "originalPrice": "$8,500",
+      "discount": 15,
+      "image": "/ID-18.png",
+      "category": "Limpieza",
+      "link": "/products/ariel-liquido",
+      "featured": false,
+      "stock": 10
+    },
+    {
+      "name": "ARROZ PREGRANEADO ECONOMICO 10 X 1 KILO – VENTA MINIMA X MANGA",
+      "brand": "Economy",
+      "price": "$3,800",
+      "originalPrice": "$4,500",
+      "discount": 16,
+      "image": "/ID-19.png",
+      "category": "Arroz",
+      "link": "/products/arroz-pregraneado",
+      "featured": false,
+      "stock": 40
+    },
+    {
+      "name": "ARROZ PREGRANEADO ECONOMICO 10 X 1 KILO – VENTA MINIMA X MANGA",
+      "brand": "Economy",
+      "price": "$3,800",
+      "originalPrice": "$4,500",
+      "discount": 16,
+      "image": "/ID-20.png",
+      "category": "Arroz",
+      "link": "/products/arroz-pregraneado",
+      "featured": false,
+      "stock": 40
+    },
+    {
+      "name": "ARROZ ARUBA G2 LARGO ROJO 10 X 1 KG – VENTA MINIMA X MANGA",
+      "brand": "Aruba",
+      "price": "$4,200",
+      "originalPrice": "$5,000",
+      "discount": 16,
+      "image": "/ID-21.png",
+      "category": "Arroz",
+      "link": "/products/arroz-aruba",
+      "featured": false,
+      "stock": 25
+    },
+    {
+      "name": "AZUCAR RUBIA ORGANICA 12 X 1 KG – VENTA MINIMA X CAJA",
+      "brand": "Dulce Natural",
+      "price": "$1,750",
+      "originalPrice": "$2,100",
+      "discount": 17,
+      "image": "/ID-22.png",
+      "category": "Azúcar",
+      "link": "/products/azucar-rubia-organica",
+      "featured": false,
+      "stock": 20
+    },
+    {
+      "name": "SAL MARINA GRUESA 10 X 500 GRS – VENTA MINIMA X DISPLAY",
+      "brand": "Mar Azul",
+      "price": "$980",
+      "originalPrice": "$1,200",
+      "discount": 18,
+      "image": "/ID-23.png",
+      "category": "Sal",
+      "link": "/products/sal-marina-gruesa",
+      "featured": false,
+      "stock": 12
+    }
+  ],
+  "heroSlides": [
+    {
+      "image": "https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1600",
+      "title": "Bienvenido a TEBA",
+      "description": "Tu tienda de confianza para productos de calidad",
+      "buttonText": "Ver Ofertas",
+      "buttonLink": "/ofertas"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1600",
+      "title": "Productos Frescos",
+      "description": "La mejor calidad en abarrotes y más",
+      "buttonText": "Explorar",
+      "buttonLink": "/categories/abarrotes"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=1600",
+      "title": "Bebidas y Refrescos",
+      "description": "Gran variedad de bebidas para toda ocasión",
+      "buttonText": "Ver Catálogo",
+      "buttonLink": "/categories/bebidas"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=1600",
+      "title": "Catálogo Digital",
+      "description": "Explora nuestra amplia variedad de productos",
+      "buttonText": "Ver Catálogo",
+      "buttonLink": "/catalog"
+    }
+  ],
+  "stores": [
+    {
+      "name": "TEBA Pinto",
+      "address": "Pinto 8, San Bernardo",
+      "coordinates": {
+        "lat": -33.5923,
+        "lng": -70.7037
+      },
+      "phone": "+56 9 7837 2029",
+      "hours": "9:00 – 14:00 y 15:30 – 19:30",
+      "whatsapp": "+56 9 7837 2029"
+    },
+    {
+      "name": "TEBA Gran Avenida",
+      "address": "Avenida Jose Miguel Carrera #13365, San Bernardo",
+      "coordinates": {
+        "lat": -33.6023,
+        "lng": -70.7097
+      },
+      "phone": "+56 9 5942 5012",
+      "hours": "9:00 – 13:00 y 15:00 – 18:30",
+      "whatsapp": "+56 9 5942 5012"
+    },
+    {
+      "name": "TEBA Lo Valledor",
+      "address": "Avenida General Velázquez #3409, Cerrillos",
+      "coordinates": {
+        "lat": -33.4889,
+        "lng": -70.6784
+      },
+      "phone": "+56 9 7837 2203",
+      "hours": "8:00 – 17:00",
+      "whatsapp": "+56 9 7837 2203"
+    },
+    {
+      "name": "TEBA JJ Perez",
+      "address": "Avenida Jose Joaquin Perez #6142, Cerro Navia",
+      "coordinates": {
+        "lat": -33.4205,
+        "lng": -70.7284
+      },
+      "phone": "+56 9 9386 7314",
+      "hours": "9:00 – 13:30 y 15:00 – 18:30",
+      "whatsapp": "+56 9 9386 7314"
+    },
+    {
+      "name": "TEBA Rancagua",
+      "address": "Avenida Federico Koke #250, Rancagua",
+      "coordinates": {
+        "lat": -34.1701,
+        "lng": -70.7408
+      },
+      "phone": "+56 9 7837 2517",
+      "hours": "8:30 – 13:30 y 15:00 – 18:30",
+      "whatsapp": "+56 9 7837 2517"
+    },
+    {
+      "name": "TEBA Lo Blanco",
+      "address": "Avenida Lo Blanco #2561, La Pintana",
+      "coordinates": {
+        "lat": -33.5814,
+        "lng": -70.7184
+      },
+      "phone": "+56 9 7836 5781",
+      "hours": "9:00 – 13:30 y 15:00 – 18:00",
+      "whatsapp": "+56 9 7836 5781"
+    }
+  ]
+}
