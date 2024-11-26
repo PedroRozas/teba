@@ -18,7 +18,7 @@ import Image from "next/image";
 import { SearchDropdown } from "@/components/search/search-dropdown";
 import { Button } from "@/components/ui/button";
 
-const categories = [
+const categoriesData = [
   {
     name: "Abarrotes",
     href: "/categories/abarrotes",
@@ -117,6 +117,18 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const itemCount = items.reduce((total, item) => total + item.quantity, 0);
+  const [categories, setCategories] = useState(
+      categoriesData.map((category) => ({ ...category, isOpen: false }))
+  );
+
+  const toggleCategory = (index: any) => {
+    setCategories((prev) =>
+        prev.map((category, idx) => ({
+          ...category,
+          isOpen: idx === index ? !category.isOpen : false, // Abre solo la categoría seleccionada
+        }))
+    );
+  };
 
   return (
     <header className="bg-[#027046] text-white sticky top-0 z-50 shadow-lg">
@@ -146,35 +158,52 @@ export default function Header() {
                     Categorías
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="grid w-[600px] grid-cols-3 gap-4 p-4 bg-white">
-                      {categories.map((category) => (
-                        <div key={category.name} className="space-y-2">
-                          <Link
-                            href={category.href}
-                            className="font-medium text-[#027046] hover:underline"
-                          >
-                            {category.name}
-                          </Link>
-                          <ul className="space-y-1">
-                            {category.subcategories.map((subcategory) => (
-                              <li key={subcategory.name}>
-                                <Link
-                                  href={subcategory.href}
-                                  className="text-sm text-gray-600 hover:text-[#027046]"
-                                >
-                                  {subcategory.name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                    {/* Acordeones dentro de las categorías */}
+                    <div className="w-[700px] p-4 bg-white rounded-md shadow-lg">
+                      {categories.map((category, index) => (
+                          <div key={index} className="border-b border-gray-200 pb-3">
+                            <button
+                                className="flex justify-between w-full font-semibold text-[#027046] hover:underline focus:outline-none"
+                                onClick={() =>
+                                    setCategories((prev) =>
+                                        prev.map((cat, idx) =>
+                                            idx === index
+                                                ? { ...cat, isOpen: !cat.isOpen }
+                                                : { ...cat, isOpen: false } // Cierra otros acordeones
+                                        )
+                                    )
+                                }
+                            >
+                              {category.name}
+                              <span>
+                  {category.isOpen ? (
+                      <X className="h-4 w-4 text-[#027046]" />
+                  ) : (
+                      <Menu className="h-4 w-4 text-[#027046]" />
+                  )}
+                </span>
+                            </button>
+                            {category.isOpen && (
+                                <ul className="pl-4 mt-2 space-y-1">
+                                  {category.subcategories.map((subcategory) => (
+                                      <li key={subcategory.name}>
+                                        <Link
+                                            href={subcategory.href}
+                                            className="text-sm text-gray-600 hover:text-[#027046]"
+                                        >
+                                          {subcategory.name}
+                                        </Link>
+                                      </li>
+                                  ))}
+                                </ul>
+                            )}
+                          </div>
                       ))}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-
             <div className="hidden lg:flex lg:w-96">
               <SearchDropdown />
             </div>
