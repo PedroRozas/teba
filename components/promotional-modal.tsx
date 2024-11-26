@@ -25,11 +25,19 @@ export function PromotionalModal() {
   useEffect(() => {
     const hasSeenModal = localStorage.getItem("hasSeenPromoModal");
     if (!hasSeenModal) {
-      const timer = setTimeout(() => {
+      const openTimer = setTimeout(() => {
         setOpen(true);
         localStorage.setItem("hasSeenPromoModal", "true");
+
+
+        const closeTimer = setTimeout(() => {
+          setOpen(false);
+        }, 5000);
+
+        return () => clearTimeout(closeTimer);
       }, 2000);
-      return () => clearTimeout(timer);
+
+      return () => clearTimeout(openTimer);
     }
   }, []);
 
