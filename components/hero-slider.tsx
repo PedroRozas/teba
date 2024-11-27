@@ -38,7 +38,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
   }, [nextSlide]);
 
   return (
-    <div className="relative h-[400px] rounded-lg overflow-hidden group">
+    <div className="relative h-[600px] rounded-lg overflow-hidden group">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -56,7 +56,7 @@ export default function HeroSlider({ slides }: HeroSliderProps) {
               src={slide.image}
               alt={slide.title}
               fill
-              className="object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-105"
+              className="object-fit transform transition-transform duration-700 ease-in-out group-hover:scale-105"
               priority={index === 0}
             />
           </div>
