@@ -107,7 +107,7 @@ export function WhyChooseUs() {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="w-full sm:w-auto text-white border-white hover:bg-white hover:text-[#027046]"
+                  className="w-full sm:w-auto text-black border-white hover:bg-white hover:text-[#027046]"
                 >
                   Ver Catálogo Digital
                 </Button>
