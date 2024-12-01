@@ -47,12 +47,12 @@ export default function Home() {
           {[
             {
               title: "Abarrotes",
-              image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=800",
+              image: "/banner3.png",
               href: "/categories/abarrotes"
             },
             {
               title: "Bebidas",
-              image: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=800",
+              image: "/banner4.png",
               href: "/categories/bebidas"
             },
             {
